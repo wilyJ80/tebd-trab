@@ -44,3 +44,7 @@ Requisitos de Negócio (Perguntas que o DW deve responder)
 - Histórico Temporal: O sistema deve armazenar dados históricos de pelo menos 5 anos para análise de tendências sazonais (ex: período de férias escolares vs. período letivo).
 - Dimensão Geográfica: Capacidade de agregar e filtrar os dados por múltiplos níveis de hierarquia espacial (Ponto de Parada -> Bairro -> Zona Urbana).
 - Performance de Consulta: O modelo (Star Schema) deve ser otimizado para consultas rápidas de agregação (Soma, Média, Percentual), evitando cruzamentos (joins) complexos que travariam um banco de dados transacional (OLTP).
+
+![./schema_oltp.svg](./schema_oltp.svg)
+
+![./schema_olap.svg](./schema_olap.svg)
