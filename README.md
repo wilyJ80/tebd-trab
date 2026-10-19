@@ -1,6 +1,18 @@
 # Trabalho: TEBD 2026.2 UNEB
 ## Hugo Alves, Victor Bitencourt
 
+## Requisitos
+
+- Instalar `sqlite3`
+
+- Instalar: `uv`
+
+    - [https://docs.astral.sh/uv/](https://docs.astral.sh/uv/)
+
+- Instalar projeto: `uv sync`
+
+- Executar migrações: `uv run src/tebd_trab/migrate.py`
+
 ## Problematização
 
 O crescimento desordenado das áreas urbanas impõe desafios complexos à mobilidade das populações. Nas grandes cidades, o sistema de transporte público frequentemente sofre com atrasos crônicos, frotas obsoletas, superlotação e falta de integração entre diferentes modais (ônibus, metrô, trens).

@@ -1,0 +1,20 @@
+[project]
+name = "tebd-trab"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "wilyJ80", email = "abjurandam@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic-settings>=2.16.0",
+    "yoyo-migrations>=9.0.0",
+]
+
+[project.scripts]
+tebd-trab = "tebd_trab:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
