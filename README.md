@@ -48,3 +48,25 @@ Requisitos de Negócio (Perguntas que o DW deve responder)
 ![./schema_oltp.svg](./schema_oltp.svg)
 
 ![./schema_olap.svg](./schema_olap.svg)
+
+## TODO
+
+- [x] Contextualização
+
+- [x] Modelagem OLTP
+
+- [x] Modelagem OLAP
+
+- [x] Dicionário de dados
+
+- [x] Script de construção
+
+- [ ] Análise exploratória de dados
+
+- [ ] Dashboard operacional
+
+- [ ] Dashboard tático
+
+- [ ] Dashboard estratégico
+
+- [ ] Plano de ação (5w2h)
