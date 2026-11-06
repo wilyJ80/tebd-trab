@@ -61,12 +61,12 @@ Requisitos de Negócio (Perguntas que o DW deve responder)
 
 - [x] Script de construção
 
-- [ ] Análise exploratória de dados
+- [ ] Análise exploratória de dados (Definição de um problema e adoção de um método de mineração de dados para a resolução e explicação do método)
 
-- [ ] Dashboard operacional
+- [ ] Dashboard operacional (Mínimo de 5 consultas (enunciado + código) voltadas ao nível operacional.)
 
-- [ ] Dashboard tático
+- [ ] Dashboard tático (Mínimo de 5 consultas (enunciado + código) voltadas ao nível tático.)
 
-- [ ] Dashboard estratégico
+- [ ] Dashboard estratégico (Mínimo de 5 consultas (enunciado + código) voltadas ao nível estratégico.)
 
-- [ ] Plano de ação (5w2h)
+- [ ] Plano de ação (5w2h) (Criação de um plano de ação para orientar tarefas a partir do processo de tomada de decisão)
