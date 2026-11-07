@@ -1,0 +1,198 @@
+{
+  "n_viagens": 263879,
+  "descritiva": {
+    "atraso_minutos": {
+      "count": 263879.0,
+      "mean": 9.55,
+      "std": 8.96,
+      "min": 0.0,
+      "25%": 4.0,
+      "50%": 7.0,
+      "75%": 12.0,
+      "max": 129.0
+    },
+    "taxa_ocupacao": {
+      "count": 263879.0,
+      "mean": 0.59,
+      "std": 0.32,
+      "min": 0.03,
+      "25%": 0.36,
+      "50%": 0.51,
+      "75%": 0.75,
+      "max": 3.23
+    },
+    "total_passageiros": {
+      "count": 263879.0,
+      "mean": 60.69,
+      "std": 30.93,
+      "min": 5.0,
+      "25%": 38.0,
+      "50%": 54.0,
+      "75%": 77.0,
+      "max": 265.0
+    },
+    "tempo_viagem_minutos": {
+      "count": 263879.0,
+      "mean": 52.84,
+      "std": 26.38,
+      "min": 16.0,
+      "25%": 31.0,
+      "50%": 45.0,
+      "75%": 70.0,
+      "max": 152.0
+    },
+    "distancia_km": {
+      "count": 263879.0,
+      "mean": 15.95,
+      "std": 7.78,
+      "min": 7.08,
+      "25%": 9.63,
+      "50%": 11.01,
+      "75%": 23.64,
+      "max": 32.12
+    },
+    "idade_veiculo": {
+      "count": 263879.0,
+      "mean": 7.36,
+      "std": 4.92,
+      "min": 0.0,
+      "25%": 3.0,
+      "50%": 7.0,
+      "75%": 11.0,
+      "max": 19.0
+    }
+  },
+  "taxa_atraso_geral": 31.8,
+  "atraso_por_zona": {
+    "Miolo": 10.4,
+    "Orla": 6.0,
+    "Subúrbio": 13.9
+  },
+  "taxa_atraso_por_zona": {
+    "Miolo": 36.5,
+    "Orla": 14.3,
+    "Subúrbio": 52.1
+  },
+  "taxa_atraso_pico": {
+    "0": 22.9,
+    "1": 47.4
+  },
+  "taxa_atraso_chuva": {
+    "0": 28.6,
+    "1": 37.8
+  },
+  "taxa_atraso_fds": {
+    "0": 34.7,
+    "1": 19.1
+  },
+  "taxa_atraso_combustivel": {
+    "Diesel": 36.7,
+    "Elétrico": 12.4,
+    "GNV": 28.7,
+    "Híbrido": 27.8
+  },
+  "idade_media_frota_zona": {
+    "Miolo": 7.4,
+    "Orla": 3.4,
+    "Subúrbio": 13.3
+  },
+  "correlacao_com_atraso": {
+    "idade_veiculo": 0.34,
+    "taxa_ocupacao": 0.34,
+    "eh_horario_pico": 0.3,
+    "eh_periodo_chuvoso": 0.12,
+    "eh_final_semana": -0.15,
+    "tempo_viagem_minutos": 0.3
+  },
+  "modelo": {
+    "n_treino": 217649,
+    "n_teste": 46230,
+    "taxa_positiva_teste": 31.3,
+    "baseline_acuracia": 68.7,
+    "acuracia": 72.3,
+    "precisao": 54.7,
+    "revocacao": 66.3,
+    "f1": 60.0,
+    "auc": 0.781,
+    "matriz_confusao": [
+      [
+        23846,
+        7921
+      ],
+      [
+        4880,
+        9583
+      ]
+    ],
+    "relatorio": {
+      "Pontual": {
+        "precision": 0.8301190559075402,
+        "recall": 0.7506531935656499,
+        "f1-score": 0.7883887391929645,
+        "support": 31767.0
+      },
+      "Atrasada": {
+        "precision": 0.5474748628884827,
+        "recall": 0.6625872917098804,
+        "f1-score": 0.5995557919104076,
+        "support": 14463.0
+      },
+      "accuracy": 0.7231018818948735,
+      "macro avg": {
+        "precision": 0.6887969593980114,
+        "recall": 0.7066202426377651,
+        "f1-score": 0.693972265551686,
+        "support": 46230.0
+      },
+      "weighted avg": {
+        "precision": 0.7416941594412925,
+        "recall": 0.7231018818948735,
+        "f1-score": 0.7293125783331847,
+        "support": 46230.0
+      }
+    },
+    "importancia": {
+      "zona_urbana_Orla": 0.489,
+      "eh_horario_pico": 0.317,
+      "eh_final_semana": 0.097,
+      "zona_urbana_Subúrbio": 0.068,
+      "idade_veiculo": 0.016,
+      "eh_periodo_chuvoso": 0.013
+    },
+    "regras": "|--- zona_urbana_Orla <= 0.5\n|   |--- eh_horario_pico <= 0.5\n|   |   |--- zona_urbana_Subúrbio <= 0.5\n|   |   |   |--- eh_final_semana <= 0.5\n|   |   |   |   |--- class: 0\n|   |   |   |--- eh_final_semana >  0.5\n|   |   |   |   |--- class: 0\n|   |   |--- zona_urbana_Subúrbio >  0.5\n|   |   |   |--- eh_final_semana <= 0.5\n|   |   |   |   |--- class: 1\n|   |   |   |--- eh_final_semana >  0.5\n|   |   |   |   |--- class: 0\n|   |--- eh_horario_pico >  0.5\n|   |   |--- eh_final_semana <= 0.5\n|   |   |   |--- zona_urbana_Subúrbio <= 0.5\n|   |   |   |   |--- class: 1\n|   |   |   |--- zona_urbana_Subúrbio >  0.5\n|   |   |   |   |--- class: 1\n|   |   |--- eh_final_semana >  0.5\n|   |   |   |--- idade_veiculo <= 8.5\n|   |   |   |   |--- class: 0\n|   |   |   |--- idade_veiculo >  8.5\n|   |   |   |   |--- class: 1\n|--- zona_urbana_Orla >  0.5\n|   |--- eh_horario_pico <= 0.5\n|   |   |--- idade_veiculo <= 3.5\n|   |   |   |--- eh_periodo_chuvoso <= 0.5\n|   |   |   |   |--- class: 0\n|   |   |   |--- eh_periodo_chuvoso >  0.5\n|   |   |   |   |--- class: 0\n|   |   |--- idade_veiculo >  3.5\n|   |   |   |--- eh_final_semana <= 0.5\n|   |   |   |   |--- class: 0\n|   |   |   |--- eh_final_semana >  0.5\n|   |   |   |   |--- class: 0\n|   |--- eh_horario_pico >  0.5\n|   |   |--- eh_final_semana <= 0.5\n|   |   |   |--- eh_periodo_chuvoso <= 0.5\n|   |   |   |   |--- class: 0\n|   |   |   |--- eh_periodo_chuvoso >  0.5\n|   |   |   |   |--- class: 1\n|   |   |--- eh_final_semana >  0.5\n|   |   |   |--- idade_veiculo <= 3.5\n|   |   |   |   |--- class: 0\n|   |   |   |--- idade_veiculo >  3.5\n|   |   |   |   |--- class: 0\n"
+  },
+  "risco_pico_por_linha": {
+    "L303": {
+      "risco_previsto": 80.2,
+      "taxa_real": 71.2
+    },
+    "L302": {
+      "risco_previsto": 79.9,
+      "taxa_real": 68.4
+    },
+    "L305": {
+      "risco_previsto": 79.9,
+      "taxa_real": 68.4
+    },
+    "L304": {
+      "risco_previsto": 79.8,
+      "taxa_real": 65.5
+    },
+    "L301": {
+      "risco_previsto": 79.7,
+      "taxa_real": 69.0
+    },
+    "L205": {
+      "risco_previsto": 72.7,
+      "taxa_real": 52.0
+    },
+    "L206": {
+      "risco_previsto": 72.7,
+      "taxa_real": 55.3
+    },
+    "L202": {
+      "risco_previsto": 72.3,
+      "taxa_real": 55.3
+    }
+  }
+}

@@ -7,108 +7,6 @@ rankdir="LR"
 
 node [shape=none]
 
-_yoyo_log [label=<
-            <TABLE BORDER="0" CELLSPACING="0" CELLBORDER="1">
-                <TR>
-                    <TD COLSPAN="2"><B>_yoyo_log</B></TD>
-                </TR>
-            
-                <TR>
-                    <TD PORT="id_to">🔑</TD>
-                    <TD PORT="id_from">id</TD>
-                </TR>
-            
-
-                <TR>
-                    <TD PORT="migration_hash_to">&nbsp;</TD>
-                    <TD PORT="migration_hash_from">migration_hash</TD>
-                </TR>
-            
-
-                <TR>
-                    <TD PORT="migration_id_to">&nbsp;</TD>
-                    <TD PORT="migration_id_from">migration_id</TD>
-                </TR>
-            
-
-                <TR>
-                    <TD PORT="operation_to">&nbsp;</TD>
-                    <TD PORT="operation_from">operation</TD>
-                </TR>
-            
-
-                <TR>
-                    <TD PORT="username_to">&nbsp;</TD>
-                    <TD PORT="username_from">username</TD>
-                </TR>
-            
-
-                <TR>
-                    <TD PORT="hostname_to">&nbsp;</TD>
-                    <TD PORT="hostname_from">hostname</TD>
-                </TR>
-            
-
-                <TR>
-                    <TD PORT="comment_to">&nbsp;</TD>
-                    <TD PORT="comment_from">comment</TD>
-                </TR>
-            
-
-                <TR>
-                    <TD PORT="created_at_utc_to">&nbsp;</TD>
-                    <TD PORT="created_at_utc_from">created_at_utc</TD>
-                </TR>
-            
-            </TABLE>
-        >];
-        
-_yoyo_migration [label=<
-            <TABLE BORDER="0" CELLSPACING="0" CELLBORDER="1">
-                <TR>
-                    <TD COLSPAN="2"><B>_yoyo_migration</B></TD>
-                </TR>
-            
-                <TR>
-                    <TD PORT="migration_hash_to">🔑</TD>
-                    <TD PORT="migration_hash_from">migration_hash</TD>
-                </TR>
-            
-
-                <TR>
-                    <TD PORT="migration_id_to">&nbsp;</TD>
-                    <TD PORT="migration_id_from">migration_id</TD>
-                </TR>
-            
-
-                <TR>
-                    <TD PORT="applied_at_utc_to">&nbsp;</TD>
-                    <TD PORT="applied_at_utc_from">applied_at_utc</TD>
-                </TR>
-            
-            </TABLE>
-        >];
-        
-_yoyo_version [label=<
-            <TABLE BORDER="0" CELLSPACING="0" CELLBORDER="1">
-                <TR>
-                    <TD COLSPAN="2"><B>_yoyo_version</B></TD>
-                </TR>
-            
-                <TR>
-                    <TD PORT="version_to">🔑</TD>
-                    <TD PORT="version_from">version</TD>
-                </TR>
-            
-
-                <TR>
-                    <TD PORT="installed_at_utc_to">&nbsp;</TD>
-                    <TD PORT="installed_at_utc_from">installed_at_utc</TD>
-                </TR>
-            
-            </TABLE>
-        >];
-        
 dim_linha [label=<
             <TABLE BORDER="0" CELLSPACING="0" CELLBORDER="1">
                 <TR>
@@ -138,6 +36,24 @@ dim_linha [label=<
                     <TD PORT="tipo_servico_from">tipo_servico</TD>
                 </TR>
             
+
+                <TR>
+                    <TD PORT="zona_urbana_to">&nbsp;</TD>
+                    <TD PORT="zona_urbana_from">zona_urbana</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="tarifa_base_to">&nbsp;</TD>
+                    <TD PORT="tarifa_base_from">tarifa_base</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="extensao_km_to">&nbsp;</TD>
+                    <TD PORT="extensao_km_from">extensao_km</TD>
+                </TR>
+            
             </TABLE>
         >];
         
@@ -160,6 +76,12 @@ dim_localizacao [label=<
             
 
                 <TR>
+                    <TD PORT="logradouro_to">&nbsp;</TD>
+                    <TD PORT="logradouro_from">logradouro</TD>
+                </TR>
+            
+
+                <TR>
                     <TD PORT="bairro_to">&nbsp;</TD>
                     <TD PORT="bairro_from">bairro</TD>
                 </TR>
@@ -168,6 +90,18 @@ dim_localizacao [label=<
                 <TR>
                     <TD PORT="zona_urbana_to">&nbsp;</TD>
                     <TD PORT="zona_urbana_from">zona_urbana</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="latitude_to">&nbsp;</TD>
+                    <TD PORT="latitude_from">latitude</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="longitude_to">&nbsp;</TD>
+                    <TD PORT="longitude_from">longitude</TD>
                 </TR>
             
             </TABLE>
@@ -192,8 +126,20 @@ dim_tarifa [label=<
             
 
                 <TR>
+                    <TD PORT="percentual_desconto_to">&nbsp;</TD>
+                    <TD PORT="percentual_desconto_from">percentual_desconto</TD>
+                </TR>
+            
+
+                <TR>
                     <TD PORT="categoria_gratuidade_to">&nbsp;</TD>
                     <TD PORT="categoria_gratuidade_from">categoria_gratuidade</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="eh_subsidiada_to">&nbsp;</TD>
+                    <TD PORT="eh_subsidiada_from">eh_subsidiada</TD>
                 </TR>
             
             </TABLE>
@@ -260,8 +206,32 @@ dim_tempo [label=<
             
 
                 <TR>
+                    <TD PORT="hora_to">&nbsp;</TD>
+                    <TD PORT="hora_from">hora</TD>
+                </TR>
+            
+
+                <TR>
                     <TD PORT="periodo_dia_to">&nbsp;</TD>
                     <TD PORT="periodo_dia_from">periodo_dia</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="eh_horario_pico_to">&nbsp;</TD>
+                    <TD PORT="eh_horario_pico_from">eh_horario_pico</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="periodo_escolar_to">&nbsp;</TD>
+                    <TD PORT="periodo_escolar_from">periodo_escolar</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="eh_periodo_chuvoso_to">&nbsp;</TD>
+                    <TD PORT="eh_periodo_chuvoso_from">eh_periodo_chuvoso</TD>
                 </TR>
             
             </TABLE>
@@ -286,8 +256,20 @@ dim_veiculo [label=<
             
 
                 <TR>
+                    <TD PORT="placa_to">&nbsp;</TD>
+                    <TD PORT="placa_from">placa</TD>
+                </TR>
+            
+
+                <TR>
                     <TD PORT="tipo_combustivel_to">&nbsp;</TD>
                     <TD PORT="tipo_combustivel_from">tipo_combustivel</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="capacidade_passageiros_to">&nbsp;</TD>
+                    <TD PORT="capacidade_passageiros_from">capacidade_passageiros</TD>
                 </TR>
             
 
@@ -298,8 +280,76 @@ dim_veiculo [label=<
             
 
                 <TR>
+                    <TD PORT="ano_fabricacao_to">&nbsp;</TD>
+                    <TD PORT="ano_fabricacao_from">ano_fabricacao</TD>
+                </TR>
+            
+
+                <TR>
                     <TD PORT="empresa_concessionaria_to">&nbsp;</TD>
                     <TD PORT="empresa_concessionaria_from">empresa_concessionaria</TD>
+                </TR>
+            
+            </TABLE>
+        >];
+        
+fato_bilhetagem [label=<
+            <TABLE BORDER="0" CELLSPACING="0" CELLBORDER="1">
+                <TR>
+                    <TD COLSPAN="2"><B>fato_bilhetagem</B></TD>
+                </TR>
+            
+                <TR>
+                    <TD PORT="id_viagem_to">🔑</TD>
+                    <TD PORT="id_viagem_from">id_viagem</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="sk_tarifa_to">🔑</TD>
+                    <TD PORT="sk_tarifa_from">sk_tarifa</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="sk_tempo_partida_to">&nbsp;</TD>
+                    <TD PORT="sk_tempo_partida_from">sk_tempo_partida</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="sk_localizacao_partida_to">&nbsp;</TD>
+                    <TD PORT="sk_localizacao_partida_from">sk_localizacao_partida</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="sk_linha_to">&nbsp;</TD>
+                    <TD PORT="sk_linha_from">sk_linha</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="sk_veiculo_to">&nbsp;</TD>
+                    <TD PORT="sk_veiculo_from">sk_veiculo</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="quantidade_passageiros_to">&nbsp;</TD>
+                    <TD PORT="quantidade_passageiros_from">quantidade_passageiros</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="faturamento_to">&nbsp;</TD>
+                    <TD PORT="faturamento_from">faturamento</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="valor_subsidio_to">&nbsp;</TD>
+                    <TD PORT="valor_subsidio_from">valor_subsidio</TD>
                 </TR>
             
             </TABLE>
@@ -312,38 +362,38 @@ fato_viagens_transporte [label=<
                 </TR>
             
                 <TR>
-                    <TD PORT="sk_tempo_partida_to">🔑</TD>
+                    <TD PORT="id_viagem_to">🔑</TD>
+                    <TD PORT="id_viagem_from">id_viagem</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="sk_tempo_partida_to">&nbsp;</TD>
                     <TD PORT="sk_tempo_partida_from">sk_tempo_partida</TD>
                 </TR>
             
 
                 <TR>
-                    <TD PORT="sk_localizacao_partida_to">🔑</TD>
+                    <TD PORT="sk_localizacao_partida_to">&nbsp;</TD>
                     <TD PORT="sk_localizacao_partida_from">sk_localizacao_partida</TD>
                 </TR>
             
 
                 <TR>
-                    <TD PORT="sk_localizacao_chegada_to">🔑</TD>
+                    <TD PORT="sk_localizacao_chegada_to">&nbsp;</TD>
                     <TD PORT="sk_localizacao_chegada_from">sk_localizacao_chegada</TD>
                 </TR>
             
 
                 <TR>
-                    <TD PORT="sk_linha_to">🔑</TD>
+                    <TD PORT="sk_linha_to">&nbsp;</TD>
                     <TD PORT="sk_linha_from">sk_linha</TD>
                 </TR>
             
 
                 <TR>
-                    <TD PORT="sk_veiculo_to">🔑</TD>
+                    <TD PORT="sk_veiculo_to">&nbsp;</TD>
                     <TD PORT="sk_veiculo_from">sk_veiculo</TD>
-                </TR>
-            
-
-                <TR>
-                    <TD PORT="sk_tarifa_to">🔑</TD>
-                    <TD PORT="sk_tarifa_from">sk_tarifa</TD>
                 </TR>
             
 
@@ -360,6 +410,24 @@ fato_viagens_transporte [label=<
             
 
                 <TR>
+                    <TD PORT="lotacao_maxima_to">&nbsp;</TD>
+                    <TD PORT="lotacao_maxima_from">lotacao_maxima</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="capacidade_ofertada_to">&nbsp;</TD>
+                    <TD PORT="capacidade_ofertada_from">capacidade_ofertada</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="taxa_ocupacao_to">&nbsp;</TD>
+                    <TD PORT="taxa_ocupacao_from">taxa_ocupacao</TD>
+                </TR>
+            
+
+                <TR>
                     <TD PORT="tempo_viagem_minutos_to">&nbsp;</TD>
                     <TD PORT="tempo_viagem_minutos_from">tempo_viagem_minutos</TD>
                 </TR>
@@ -368,6 +436,12 @@ fato_viagens_transporte [label=<
                 <TR>
                     <TD PORT="atraso_minutos_to">&nbsp;</TD>
                     <TD PORT="atraso_minutos_from">atraso_minutos</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="distancia_km_to">&nbsp;</TD>
+                    <TD PORT="distancia_km_from">distancia_km</TD>
                 </TR>
             
 
@@ -382,36 +456,26 @@ fato_viagens_transporte [label=<
                     <TD PORT="faturamento_bruto_from">faturamento_bruto</TD>
                 </TR>
             
-            </TABLE>
-        >];
-        
-yoyo_lock [label=<
-            <TABLE BORDER="0" CELLSPACING="0" CELLBORDER="1">
+
                 <TR>
-                    <TD COLSPAN="2"><B>yoyo_lock</B></TD>
-                </TR>
-            
-                <TR>
-                    <TD PORT="locked_to">🔑</TD>
-                    <TD PORT="locked_from">locked</TD>
+                    <TD PORT="flag_atraso_to">&nbsp;</TD>
+                    <TD PORT="flag_atraso_from">flag_atraso</TD>
                 </TR>
             
 
                 <TR>
-                    <TD PORT="ctime_to">&nbsp;</TD>
-                    <TD PORT="ctime_from">ctime</TD>
-                </TR>
-            
-
-                <TR>
-                    <TD PORT="pid_to">&nbsp;</TD>
-                    <TD PORT="pid_from">pid</TD>
+                    <TD PORT="flag_superlotacao_to">&nbsp;</TD>
+                    <TD PORT="flag_superlotacao_from">flag_superlotacao</TD>
                 </TR>
             
             </TABLE>
         >];
         
-fato_viagens_transporte:sk_tarifa_from:e -> dim_tarifa:sk_tarifa_to:w
+fato_bilhetagem:sk_veiculo_from:e -> dim_veiculo:sk_veiculo_to:w
+fato_bilhetagem:sk_linha_from:e -> dim_linha:sk_linha_to:w
+fato_bilhetagem:sk_localizacao_partida_from:e -> dim_localizacao:sk_localizacao_to:w
+fato_bilhetagem:sk_tempo_partida_from:e -> dim_tempo:sk_tempo_to:w
+fato_bilhetagem:sk_tarifa_from:e -> dim_tarifa:sk_tarifa_to:w
 fato_viagens_transporte:sk_veiculo_from:e -> dim_veiculo:sk_veiculo_to:w
 fato_viagens_transporte:sk_linha_from:e -> dim_linha:sk_linha_to:w
 fato_viagens_transporte:sk_localizacao_chegada_from:e -> dim_localizacao:sk_localizacao_to:w

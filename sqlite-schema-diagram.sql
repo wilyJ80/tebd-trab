@@ -98,6 +98,8 @@ WHERE
     -- certainly user databases don't have foreign keys to them, so
     -- let's just filter them out.
     t.name NOT LIKE 'sqlite_%'
+    AND t.name NOT LIKE '\_yoyo%' ESCAPE '\'
+    AND t.name NOT LIKE 'yoyo%'
 
     -- Despite its name, pragma_table_list() also includes views.
     -- Since those don't store any information or have any correctness

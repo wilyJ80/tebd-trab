@@ -8,12 +8,16 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
+    "matplotlib>=3.11.2",
+    "pandas>=3.1.1",
+    "plotly>=7.1.0",
     "pydantic-settings>=2.16.0",
+    "scikit-learn>=1.9.1",
     "yoyo-migrations>=9.0.0",
 ]
 
 [project.scripts]
-tebd-trab = "tebd_trab:main"
+tebd-trab = "tebd_trab.pipeline:main"
 
 [build-system]
 requires = ["uv_build>=0.12.10,<0.13.0"]
