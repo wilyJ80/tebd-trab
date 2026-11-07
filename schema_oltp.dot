@@ -7,103 +7,27 @@ rankdir="LR"
 
 node [shape=none]
 
-_yoyo_log [label=<
+bairros [label=<
             <TABLE BORDER="0" CELLSPACING="0" CELLBORDER="1">
                 <TR>
-                    <TD COLSPAN="2"><B>_yoyo_log</B></TD>
+                    <TD COLSPAN="2"><B>bairros</B></TD>
                 </TR>
             
                 <TR>
-                    <TD PORT="id_to">🔑</TD>
-                    <TD PORT="id_from">id</TD>
-                </TR>
-            
-
-                <TR>
-                    <TD PORT="migration_hash_to">&nbsp;</TD>
-                    <TD PORT="migration_hash_from">migration_hash</TD>
+                    <TD PORT="id_bairro_to">🔑</TD>
+                    <TD PORT="id_bairro_from">id_bairro</TD>
                 </TR>
             
 
                 <TR>
-                    <TD PORT="migration_id_to">&nbsp;</TD>
-                    <TD PORT="migration_id_from">migration_id</TD>
+                    <TD PORT="nome_bairro_to">&nbsp;</TD>
+                    <TD PORT="nome_bairro_from">nome_bairro</TD>
                 </TR>
             
 
                 <TR>
-                    <TD PORT="operation_to">&nbsp;</TD>
-                    <TD PORT="operation_from">operation</TD>
-                </TR>
-            
-
-                <TR>
-                    <TD PORT="username_to">&nbsp;</TD>
-                    <TD PORT="username_from">username</TD>
-                </TR>
-            
-
-                <TR>
-                    <TD PORT="hostname_to">&nbsp;</TD>
-                    <TD PORT="hostname_from">hostname</TD>
-                </TR>
-            
-
-                <TR>
-                    <TD PORT="comment_to">&nbsp;</TD>
-                    <TD PORT="comment_from">comment</TD>
-                </TR>
-            
-
-                <TR>
-                    <TD PORT="created_at_utc_to">&nbsp;</TD>
-                    <TD PORT="created_at_utc_from">created_at_utc</TD>
-                </TR>
-            
-            </TABLE>
-        >];
-        
-_yoyo_migration [label=<
-            <TABLE BORDER="0" CELLSPACING="0" CELLBORDER="1">
-                <TR>
-                    <TD COLSPAN="2"><B>_yoyo_migration</B></TD>
-                </TR>
-            
-                <TR>
-                    <TD PORT="migration_hash_to">🔑</TD>
-                    <TD PORT="migration_hash_from">migration_hash</TD>
-                </TR>
-            
-
-                <TR>
-                    <TD PORT="migration_id_to">&nbsp;</TD>
-                    <TD PORT="migration_id_from">migration_id</TD>
-                </TR>
-            
-
-                <TR>
-                    <TD PORT="applied_at_utc_to">&nbsp;</TD>
-                    <TD PORT="applied_at_utc_from">applied_at_utc</TD>
-                </TR>
-            
-            </TABLE>
-        >];
-        
-_yoyo_version [label=<
-            <TABLE BORDER="0" CELLSPACING="0" CELLBORDER="1">
-                <TR>
-                    <TD COLSPAN="2"><B>_yoyo_version</B></TD>
-                </TR>
-            
-                <TR>
-                    <TD PORT="version_to">🔑</TD>
-                    <TD PORT="version_from">version</TD>
-                </TR>
-            
-
-                <TR>
-                    <TD PORT="installed_at_utc_to">&nbsp;</TD>
-                    <TD PORT="installed_at_utc_from">installed_at_utc</TD>
+                    <TD PORT="zona_urbana_to">&nbsp;</TD>
+                    <TD PORT="zona_urbana_from">zona_urbana</TD>
                 </TR>
             
             </TABLE>
@@ -154,6 +78,12 @@ linhas [label=<
             
 
                 <TR>
+                    <TD PORT="id_empresa_to">&nbsp;</TD>
+                    <TD PORT="id_empresa_from">id_empresa</TD>
+                </TR>
+            
+
+                <TR>
                     <TD PORT="codigo_linha_to">&nbsp;</TD>
                     <TD PORT="codigo_linha_from">codigo_linha</TD>
                 </TR>
@@ -166,8 +96,20 @@ linhas [label=<
             
 
                 <TR>
+                    <TD PORT="tipo_servico_to">&nbsp;</TD>
+                    <TD PORT="tipo_servico_from">tipo_servico</TD>
+                </TR>
+            
+
+                <TR>
                     <TD PORT="tarifa_base_to">&nbsp;</TD>
                     <TD PORT="tarifa_base_from">tarifa_base</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="extensao_km_to">&nbsp;</TD>
+                    <TD PORT="extensao_km_from">extensao_km</TD>
                 </TR>
             
 
@@ -192,6 +134,12 @@ pontos_parada [label=<
             
 
                 <TR>
+                    <TD PORT="id_bairro_to">&nbsp;</TD>
+                    <TD PORT="id_bairro_from">id_bairro</TD>
+                </TR>
+            
+
+                <TR>
                     <TD PORT="codigo_ponto_to">&nbsp;</TD>
                     <TD PORT="codigo_ponto_from">codigo_ponto</TD>
                 </TR>
@@ -200,12 +148,6 @@ pontos_parada [label=<
                 <TR>
                     <TD PORT="logradouro_to">&nbsp;</TD>
                     <TD PORT="logradouro_from">logradouro</TD>
-                </TR>
-            
-
-                <TR>
-                    <TD PORT="bairro_to">&nbsp;</TD>
-                    <TD PORT="bairro_from">bairro</TD>
                 </TR>
             
 
@@ -244,6 +186,50 @@ tipos_tarifa [label=<
                 <TR>
                     <TD PORT="percentual_desconto_to">&nbsp;</TD>
                     <TD PORT="percentual_desconto_from">percentual_desconto</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="eh_subsidiada_to">&nbsp;</TD>
+                    <TD PORT="eh_subsidiada_from">eh_subsidiada</TD>
+                </TR>
+            
+            </TABLE>
+        >];
+        
+validacoes_bilhetagem [label=<
+            <TABLE BORDER="0" CELLSPACING="0" CELLBORDER="1">
+                <TR>
+                    <TD COLSPAN="2"><B>validacoes_bilhetagem</B></TD>
+                </TR>
+            
+                <TR>
+                    <TD PORT="id_validacao_to">🔑</TD>
+                    <TD PORT="id_validacao_from">id_validacao</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="id_viagem_to">&nbsp;</TD>
+                    <TD PORT="id_viagem_from">id_viagem</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="id_tipo_tarifa_to">&nbsp;</TD>
+                    <TD PORT="id_tipo_tarifa_from">id_tipo_tarifa</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="quantidade_validacoes_to">&nbsp;</TD>
+                    <TD PORT="quantidade_validacoes_from">quantidade_validacoes</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="valor_arrecadado_to">&nbsp;</TD>
+                    <TD PORT="valor_arrecadado_from">valor_arrecadado</TD>
                 </TR>
             
             </TABLE>
@@ -296,6 +282,12 @@ veiculos [label=<
                     <TD PORT="ano_fabricacao_from">ano_fabricacao</TD>
                 </TR>
             
+
+                <TR>
+                    <TD PORT="data_inicio_operacao_to">&nbsp;</TD>
+                    <TD PORT="data_inicio_operacao_from">data_inicio_operacao</TD>
+                </TR>
+            
             </TABLE>
         >];
         
@@ -336,8 +328,8 @@ viagens_diarias [label=<
             
 
                 <TR>
-                    <TD PORT="id_tipo_tarifa_to">&nbsp;</TD>
-                    <TD PORT="id_tipo_tarifa_from">id_tipo_tarifa</TD>
+                    <TD PORT="data_hora_partida_prevista_to">&nbsp;</TD>
+                    <TD PORT="data_hora_partida_prevista_from">data_hora_partida_prevista</TD>
                 </TR>
             
 
@@ -360,8 +352,20 @@ viagens_diarias [label=<
             
 
                 <TR>
-                    <TD PORT="passageiros_pagantes_to">&nbsp;</TD>
-                    <TD PORT="passageiros_pagantes_from">passageiros_pagantes</TD>
+                    <TD PORT="distancia_km_to">&nbsp;</TD>
+                    <TD PORT="distancia_km_from">distancia_km</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="total_passageiros_to">&nbsp;</TD>
+                    <TD PORT="total_passageiros_from">total_passageiros</TD>
+                </TR>
+            
+
+                <TR>
+                    <TD PORT="lotacao_maxima_to">&nbsp;</TD>
+                    <TD PORT="lotacao_maxima_from">lotacao_maxima</TD>
                 </TR>
             
 
@@ -373,34 +377,11 @@ viagens_diarias [label=<
             </TABLE>
         >];
         
-yoyo_lock [label=<
-            <TABLE BORDER="0" CELLSPACING="0" CELLBORDER="1">
-                <TR>
-                    <TD COLSPAN="2"><B>yoyo_lock</B></TD>
-                </TR>
-            
-                <TR>
-                    <TD PORT="locked_to">🔑</TD>
-                    <TD PORT="locked_from">locked</TD>
-                </TR>
-            
-
-                <TR>
-                    <TD PORT="ctime_to">&nbsp;</TD>
-                    <TD PORT="ctime_from">ctime</TD>
-                </TR>
-            
-
-                <TR>
-                    <TD PORT="pid_to">&nbsp;</TD>
-                    <TD PORT="pid_from">pid</TD>
-                </TR>
-            
-            </TABLE>
-        >];
-        
+pontos_parada:id_bairro_from:e -> bairros:id_bairro_to:w
+validacoes_bilhetagem:id_tipo_tarifa_from:e -> tipos_tarifa:id_tipo_tarifa_to:w
+validacoes_bilhetagem:id_viagem_from:e -> viagens_diarias:id_viagem_to:w
 veiculos:id_empresa_from:e -> empresas_onibus:id_empresa_to:w
-viagens_diarias:id_tipo_tarifa_from:e -> tipos_tarifa:id_tipo_tarifa_to:w
+linhas:id_empresa_from:e -> empresas_onibus:id_empresa_to:w
 viagens_diarias:id_ponto_chegada_from:e -> pontos_parada:id_ponto_to:w
 viagens_diarias:id_ponto_partida_from:e -> pontos_parada:id_ponto_to:w
 viagens_diarias:id_linha_from:e -> linhas:id_linha_to:w
