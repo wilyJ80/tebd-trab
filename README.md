@@ -60,7 +60,7 @@ A ausência de uma visão analítica centralizada fragmenta as tomadas de decis�
 Este projeto está diretamente alinhado com o ODS 11: Cidades e Comunidades Sustentáveis, mais especificamente com a Meta 11.2, que visa, até 2030, proporcionar o acesso a sistemas de transporte seguros, acessíveis, sustentáveis e a preço acessível para todos, melhorando a segurança rodoviária por meio da expansão dos transportes públicos.
 A criação de um Data Warehouse (DW) focado na mobilidade urbana justifica-se pela necessidade de transformar registros brutos (como dados de GPS dos ônibus e bilhetagem eletrônica) em inteligência estratégica. Através da modelagem multidimensional, o projeto viabiliza:
 - Inclusão Social: Identificar bairros periféricos desatendidos ou com tarifas desproporcionais ao tempo de viagem.
-- Sustentabilidade Ambiental: Monitorar e incentivar a substituição de veículos movidos a combustíveis fósseis por modais elétricos ou híbridos, calculando a redução na emissão de CO₂.
+- Sustentabilidade Ambiental: Monitorar e incentivar a substituição de veículos movidos a combustíveis fósseis por modais elétricos ou híbridos, calculando a redução na emissão de CO2.
 - Eficiência Operacional: Otimizar frotas para reduzir congestionamentos e o tempo de deslocamento da população, tornando as cidades mais resilientes e inteligentes.
 
 ## Requisitos do Sistema (Data Warehouse)
